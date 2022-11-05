@@ -1,2 +1,4 @@
+from decimal import *
 a,b = map(int,input().split())
-print(f"{(a/b):.1000f}")
+getcontext().prec = 2000
+print(f"{Decimal(a) / Decimal(b):.2000f}".rstrip('0'))
