@@ -1,12 +1,6 @@
 n = int(input())
-
-for _ in range(n) :
-    print("@"*n + " "*(3*n) + "@"*n)
-for _ in range(n) :
-    print("@"*(5*n))
-for _ in range(n) :
-    print("@"*n + " "*(3*n) + "@"*n)
-for _ in range(n) :
-    print("@"*(5*n))
-for _ in range(n) :
-    print("@"*n + " "*(3*n) + "@"*n)
+for i in range(5) :
+    if i%2 == 0 :
+        print(("@"*n + " "*(3*n) + "@"*n+"\n")*n, end="")
+    else :
+        print(("@"*(5*n)+"\n")*n, end="")
