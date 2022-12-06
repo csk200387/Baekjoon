@@ -1,1 +1,1 @@
-print(*sorted(input(),reverse=True),sep='')
+print(*sorted(input(),reverse=1),sep='')
