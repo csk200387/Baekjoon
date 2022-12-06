@@ -1,2 +1,1 @@
-a = list(input())
-print("".join(sorted(a,reverse=True)))
+print(*sorted(input(),reverse=True),sep='')
