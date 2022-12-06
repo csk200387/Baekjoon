@@ -1,2 +1,1 @@
-a = input()
-print("YONSEI" if a == "0" else "Leading the Way to the Future")
+print(["YONSEI","Leading the Way to the Future"][int(input())])
