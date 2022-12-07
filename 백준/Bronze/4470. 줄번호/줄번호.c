@@ -2,7 +2,7 @@
 int main() {
 	int a, i;
 	scanf("%d ", &a);
-	char *arr[a][51];
+	char arr[a][51];
 	for (i = 0; i < a; i++) {
 		gets(arr[i]);
 	}
