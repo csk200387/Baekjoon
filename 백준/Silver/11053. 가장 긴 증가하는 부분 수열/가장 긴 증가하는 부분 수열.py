@@ -1,3 +1,4 @@
+# ChatGPT OpenAI
 # 수열 A
 input()
 A = list(map(int,input().split()))
