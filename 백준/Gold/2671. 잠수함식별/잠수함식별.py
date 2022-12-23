@@ -1,8 +1,2 @@
 import re
-c = re.compile("(100+1+|01)+")
-i = input()
-a = c.fullmatch(i)
-if a == None :
-    print("NOISE")
-else :
-    print("SUBMARINE")
+print("NOISE" if re.fullmatch("(100+1+|01)+",input()) == None else "SUBMARINE")
