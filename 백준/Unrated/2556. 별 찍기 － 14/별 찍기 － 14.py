@@ -1,3 +1,3 @@
-num = int(input())
-for i in range(num) :
-    print("*"*num)
+n=int(input())
+for _ in range(n) :
+    print("*"*n)
