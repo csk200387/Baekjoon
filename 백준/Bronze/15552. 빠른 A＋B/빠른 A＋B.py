@@ -1,5 +1,5 @@
 import sys
-num = int(input(""))
-for i in range(0,num):
-    data = list(map(int,sys.stdin.readline().rstrip("\n").split()))
-    print(data[0]+data[1])
+input=lambda:sys.stdin.readline().rstrip()
+for _ in range(int(input())):
+    a,b=map(int,input().split())
+    print(a+b)
