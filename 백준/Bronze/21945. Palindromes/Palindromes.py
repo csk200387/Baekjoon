@@ -1,7 +1,5 @@
-a = input()
-ar = input().split()
-res = 0
-for i in ar :
-    if i == i[::-1] :
-        res += int(i)
-print(res)
+r=0
+for i in [*open(0)][1].split():
+ if i == i[::-1]:
+  r+=int(i)
+print(r)
