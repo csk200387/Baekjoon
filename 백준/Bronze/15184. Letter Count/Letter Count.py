@@ -1,6 +1,5 @@
-import re
-letter = re.findall("[A-Z]", input().upper())
+l = input().upper()
 for i in range(26) :
-    char = chr(65+i)
-    star = "*"*letter.count(char)
-    print(f"{char} | {star}")
+    c = chr(65+i)
+    s = "*"*l.count(c)
+    print(f"{c} | {s}")
