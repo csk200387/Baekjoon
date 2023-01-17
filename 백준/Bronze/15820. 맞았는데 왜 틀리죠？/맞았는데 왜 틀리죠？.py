@@ -1,5 +1,5 @@
 import sys
-input = lambda:sys.stdin.readline().rstrip()
+# input = lambda:sys.stdin.readline().rstrip()
 Test, sysTest = map(int,input().split())
 count = 0
 for i in range(Test+sysTest) :
