@@ -1,16 +1,11 @@
-from typing import List, Tuple
-
-def polygon_area(vertices: List[Tuple[int, int]]) -> float:
-    n = len(vertices)
-    area = 0.0
-    for i in range(n):
-        j = (i + 1) % n
-        area += vertices[i][0] * vertices[j][1]
-        area -= vertices[j][0] * vertices[i][1]
-    area = abs(area) / 2.0
-    return round(area, 2)
-
-vertices = []
+arr = []
 for i in range(int(input())) :
-    vertices.append(tuple(map(int, input().split())))
-print(polygon_area(vertices))
+    arr.append(tuple(map(int, input().split())))
+n = len(arr)
+S = 0.0
+for i in range(n):
+    j = (i + 1) % n
+    S += arr[i][0] * arr[j][1]
+    S -= arr[j][0] * arr[i][1]
+S = abs(S) / 2.0
+print(round(S, 2))
