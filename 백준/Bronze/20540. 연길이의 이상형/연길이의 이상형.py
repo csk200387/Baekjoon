@@ -1,3 +1,3 @@
-arr = ["E", "I", "E", "S", "N", "S", "T", "F", "T", "J", "P", "J"]
+a = "EIESNSTFTJPJ"
 for i in input() :
-    print(arr[arr.index(i)+1], end="")
+    print(a[a.index(i)+1], end="")
