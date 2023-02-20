@@ -1,12 +1,11 @@
 #include <stdio.h>
+
 int main() {
-	int a, i;
-	scanf("%d ", &a);
-	char arr[a][51];
-	for (i = 0; i < a; i++) {
-		gets(arr[i]);
+	int num;
+	char str[50];
+	scanf("%d ", &num);
+	for (int i = 0; i < num; i++) {
+		gets(str);
+		printf("%d. %s\n", i+1, str);
 	}
-	for (i = 0; i < a; i++) {
-		printf("%d. %s\n", (i+1), arr[i]);
-	}	
 }
