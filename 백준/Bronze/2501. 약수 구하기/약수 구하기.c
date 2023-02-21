@@ -12,8 +12,7 @@ int main() {
 					printf("%d", i);
 					exit(0);
 				} else if (index > M) {
-					printf("0");
-					exit(0);
+					return 0;
 				}
 				index ++;
 			}
