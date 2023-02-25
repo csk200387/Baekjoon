@@ -1,10 +1,10 @@
-# [Bronze II] Morse Code Palindromes - 24745 
+# [Bronze I] Morse Code Palindromes - 24745 
 
 [문제 링크](https://www.acmicpc.net/problem/24745) 
 
 ### 성능 요약
 
-메모리: 33564 KB, 시간: 152 ms
+메모리: 31256 KB, 시간: 44 ms
 
 ### 분류
 
