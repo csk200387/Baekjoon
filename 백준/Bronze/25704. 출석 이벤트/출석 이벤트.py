@@ -1,4 +1,12 @@
 c = int(input())
 p = int(input())
-arr = [max(p-500, 0), int(p*0.9), max(p-2000, 0), int(p*0.75)][:c//5]
-print(p if not arr else min(arr))
+arr = [p]
+if c >= 5 :
+    arr.append(max(p-500, 0))
+if c >= 10 :
+    arr.append(int(p*0.9))
+if c >= 15 :
+    arr.append(max(p-2000, 0))
+if c >= 20 :
+    arr.append(int(p*0.75))
+print(min(arr))
