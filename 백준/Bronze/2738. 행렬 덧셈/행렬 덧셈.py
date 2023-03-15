@@ -1,13 +1,9 @@
 import sys
-input = sys.stdin.readline
-a = input().rstrip().split()
-N = int(a[0])
-M = int(a[1])
-arr = []
+inp = lambda:sys.stdin.readline().strip().split()
+N, M = map(int, inp())
+arr = [[*map(int, inp())] for _ in range(N)]
 for i in range(N) :
-    arr.append(list(map(int,input().rstrip().split())))
-for i in range(N) :
-    tmp = list(map(int,input().rstrip().split()))
+    tmp = list(map(int, inp()))
     for l in range(M) :
         arr[i][l] += tmp[l]
-    print(" ".join(list(map(str,arr[i]))))
+    print(*arr[i])
