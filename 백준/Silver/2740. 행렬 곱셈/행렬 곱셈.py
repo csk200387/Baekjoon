@@ -1,22 +1,11 @@
 import sys
-input = sys.stdin.readline
-
-arr1 = []
-arr2 = []
-
-n = int(input().split()[0])
-for i in range(n) :
-    arr1.append(list(map(int,input().rstrip().split())))
-    
-n = int(input().split()[0])
-for i in range(n) :
-    arr2.append(list(map(int,input().rstrip().split())))
-    
-for i in range(len(arr1)) :
-    a = []
-    for h in range(len(arr2[0])) :
-        tmp = 0
-        for l in range(len(arr2)) :
-            tmp += arr1[i][l]*arr2[l][h]
-        a.append(tmp)
-    print(" ".join(list(map(str,a))))
+input = lambda:sys.stdin.readline().rstrip()
+_is = lambda:input().split()
+lm = lambda:list(map(int, _is()))
+n1 = int(_is()[0])
+a1 = [lm() for _ in range(n1)]
+n2 = int(_is()[0])
+a2 = [lm() for _ in range(n2)]
+for i in range(n1) :
+    a = [sum(a1[i][l]*a2[l][h] for l in range(len(a2))) for h in range(len(a2[0]))]
+    print(*a)
