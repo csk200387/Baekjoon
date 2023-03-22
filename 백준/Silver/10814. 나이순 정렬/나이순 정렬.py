@@ -1,9 +1,11 @@
-memNum = int(input(""))
-l = list()
-for i in range(0,memNum):
-    mem = input("").split(" ")
-    l.append([int(mem[0]), mem[1]])
+import sys
+input = lambda:sys.stdin.readline().rstrip()
 
-sd = sorted(l, reverse=False, key=lambda x:x[0])
-for i in range(0, memNum):
-    print(str(sd[i][0]) + " " + sd[i][1])
+n = int(input())
+l = []
+for i in range(n) :
+    t, s = input().split()
+    l.append([int(t), s])
+
+for i in sorted(l, reverse=0, key=lambda x:x[0]) :
+    print(*i)
