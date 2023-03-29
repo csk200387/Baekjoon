@@ -1,3 +1,5 @@
+import sys
+input = lambda:sys.stdin.readline().rstrip()
 a, b, c = map(int, input().split())
 N = int(input())
 arr = [0]*N
