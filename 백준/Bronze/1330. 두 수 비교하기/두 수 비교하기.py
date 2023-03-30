@@ -1,4 +1,2 @@
-num = input("").split(" ")
-A = int(num[0])
-B = int(num[1])
+A, B = map(int, input().split())
 print("{}".format("==" if A == B else ">" if A > B else "<"))
