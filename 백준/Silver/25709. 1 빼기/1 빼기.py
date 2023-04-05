@@ -1,5 +1,4 @@
-n=int(input())
-c=0
+n,c=int(input()),0
 while n!=0:
  if n-1==0:
   c+=1
