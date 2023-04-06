@@ -1,4 +1,1 @@
-A = int(input(""))
-for i in range(0, A):
-    num = input("").split(" ")
-    print(int(num[0])+int(num[1]))
+for i in [*open(0)][1::]:print(sum(map(int,i.split())))
