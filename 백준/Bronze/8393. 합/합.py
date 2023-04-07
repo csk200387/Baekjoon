@@ -1,5 +1,2 @@
-A = int(input(""))
-result = 0
-for i in range(1,A+1):
-    result += i
-print(result)
+A = int(input())
+print(A*(A+1)//2)
