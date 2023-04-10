@@ -4,9 +4,9 @@
 int gcd(long int, long int);
 
 int main() {
-    long long int a, b;
-    if (scanf("%lld %lld", &a, &b) != 2) exit(0);
-    printf("%lld\n", (a*b)/gcd(a,b));
+    long int a, b;
+    if (scanf("%ld %ld", &a, &b) != 2) exit(0);
+    printf("%ld\n", (a*b)/gcd(a,b));
     return 0;
 }
 int gcd(long int a, long int b) {
