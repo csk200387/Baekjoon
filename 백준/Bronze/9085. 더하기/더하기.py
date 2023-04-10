@@ -1,5 +1,3 @@
-num = int(input())
-for i in range(num) :
-    n = int(input())
-    a = list(map(int,input().split()))
-    print(sum(a))
+for i in range(int(input())):
+ input()
+ print(sum(map(int,input().split())))
