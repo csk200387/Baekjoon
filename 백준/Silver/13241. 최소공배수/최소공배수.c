@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int gcd(long long int, long long int);
+int gcd(long int, long int);
 
 int main() {
     long long int a, b;
@@ -9,7 +9,7 @@ int main() {
     printf("%lld\n", (a*b)/gcd(a,b));
     return 0;
 }
-int gcd(long long int a, long long int b) {
+int gcd(long int a, long int b) {
     if (b == 0) {
         return a;
     } else {
