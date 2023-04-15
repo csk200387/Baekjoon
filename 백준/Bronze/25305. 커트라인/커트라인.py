@@ -1,10 +1,4 @@
-a = input("")
-people = int(a.split(" ")[0])
-cut = int(a.split(" ")[1])
-
-b = input("")
-arr = b.split(" ")
-arr = list(map(int,arr))
-
-arr.sort(reverse=True)
-print(arr[cut-1])
+p, c = map(int, input().split())
+arr = list(map(int, input().split()))
+arr.sort()
+print(arr[-c])
