@@ -1,8 +1,1 @@
-import sys
-input = sys.stdin.readline
-num = int(input().rstrip())
-res = 0
-for i in range(num) :
-    a = int(input().rstrip())
-    res += a-1
-print(res+1)
+n,*a=map(int,open(0));print(sum([i-1 for i in a])+1)
