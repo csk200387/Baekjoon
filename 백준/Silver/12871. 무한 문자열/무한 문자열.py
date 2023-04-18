@@ -1,4 +1,1 @@
-a=input()
-b=input()
-al,bl=len(a),len(b)
-print(1 if al*b==bl*a else 0)
+a,b=input(),input();print(int(len(a)*b==len(b)*a))
