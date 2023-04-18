@@ -1,8 +1,7 @@
+import sys
+input = lambda:sys.stdin.readline().rstrip()
 num = int(input())
-ar = []
-for i in range(num) :
-    ar.append(list(map(int,input().split())))
-
+ar = [[*map(int,input().split())] for _ in range(num)]
 ar.sort(key=lambda x:(x[0], x[1]))
 for i in ar :
-    print(" ".join(map(str,i)))
+    print(*i)
