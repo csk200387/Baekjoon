@@ -1,8 +1,3 @@
-a, *arr = open(0)
-t = sorted(arr)
-if t == arr :
-    print("INCREASING")
-elif t[::-1] == arr :
-    print("DECREASING")
-else :
-    print("NEITHER")
+a,*arr=open(0)
+t=sorted(arr)
+print("INCREASING"if t==arr else"DECREASING"if t[::-1]==arr else"NEITHER")
