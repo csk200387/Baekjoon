@@ -1,11 +1,8 @@
-import sys
-input = lambda:sys.stdin.readline().rstrip()
-arr = []
-for _ in range(int(input())) :
-    arr.append(input())
-if sorted(arr) == arr :
+a, *arr = open(0)
+t = sorted(arr)
+if t == arr :
     print("INCREASING")
-elif sorted(arr, reverse=True) == arr :
+elif t[::-1] == arr :
     print("DECREASING")
 else :
     print("NEITHER")
