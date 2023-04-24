@@ -1,4 +1,1 @@
-t = input()
-arr = [t[i:] for i in range(len(t))]
-arr.sort()
-print(*arr, sep="\n")
+t=input();print(*sorted([t[i:] for i in range(len(t))]))
