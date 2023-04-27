@@ -1,3 +1,6 @@
-inputNum = int(input(""))
-for i in range(1,inputNum+1):
-    print("*"*i)
+def star(n):
+    if n == 0:
+        return
+    star(n-1)
+    print("*"*n)
+star(int(input()))
