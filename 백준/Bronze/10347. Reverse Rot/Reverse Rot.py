@@ -4,6 +4,4 @@ while 1:
     if i=='0':
         exit()
     a,b = i.split()
-    for j in range(len(b)-1,-1,-1):
-        print(t[t.index(b[j])+int(a)],end="")
-    print()
+    print(*[t[t.index(i)+int(a)] for i in b[::-1]],sep="")
