@@ -1,6 +1,4 @@
-# 분할정복
 A, B, C = map(int,input().split())
-
 def prob(n) :
     if n == 1 :
         return A%C
