@@ -1,4 +1,3 @@
-x = input("")
-a = input("").split(" ")
-a = list(map(int,a))
+input()
+a = list(map(int,input().split()))
 print(min(a),max(a))
