@@ -1,12 +1,8 @@
-import sys
-input = sys.stdin.readline
-
-n = int(input().rstrip())
+n = int(input())
 for i in range(n) :
-    t = int(input().rstrip())
+    t = int(input())
     dic = {}
     for l in range(t) :
-        tmp = input().rstrip().split()
-        name, amount = tmp[0], int(tmp[1])
-        dic[name] = amount
+        name, amount = input().split()
+        dic[name] = int(amount)
     print(max(dic, key=dic.get))
