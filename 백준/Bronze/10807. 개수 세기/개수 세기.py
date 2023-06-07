@@ -1,4 +1,2 @@
-a = input()
-b = input().split()
-c = input()
-print(b.count(c))
+a,b,c=open(0)
+print(b.split().count(c[:-1]))
