@@ -1,5 +1,1 @@
-a, b = map(int, input().split())
-if not a % 2 == 0 and not b % 2 == 0:
-    print(min(a, b))
-else:
-    print(0)
+a,b=map(int,input().split());print(min(a,b)if a%2!=0and b%2!=0else 0)
