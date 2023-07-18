@@ -1,14 +1,17 @@
-def eratosthenes(b):
-    primes = [True for _ in range(b+1)]
+def eratosthenes(n):
+    primes = [True for _ in range(104743)]
     primes[0] = primes[1] = False
-    res = []
-    for i in range(2, b+1):
+    res = 0
+    count = 0
+    for i in range(2, 104743):
         if primes[i]:
-            for j in range(i*i, b+1, i):
+            for j in range(i*i, 104743, i):
                 primes[j] = False
-    for i in range(b+1):
+    for i in range(104743):
         if primes[i]:
-            res += [i]
+            res = i
+            count += 1
+            if count == n:
+                break
     return res
-n = int(input())
-print(eratosthenes(104742)[n-1])
+print(eratosthenes(int(input())))
