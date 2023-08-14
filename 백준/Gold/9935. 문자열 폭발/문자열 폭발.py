@@ -4,7 +4,7 @@ data = input()
 tg = list(input())
 stack = []
 for i in range(len(data)):
-    stack += data[i]
+    stack.append(data[i])
     if len(stack) >= len(tg):
         if stack[-len(tg):] == tg:
             del stack[-len(tg):]
