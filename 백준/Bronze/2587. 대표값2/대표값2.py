@@ -1,5 +1,3 @@
-arr =[]
-for i in range(5) :
-    arr.append(int(input()))
+arr=[*map(int,open(0))]
 print(int(sum(arr)/5))
 print(sorted(arr)[2])
