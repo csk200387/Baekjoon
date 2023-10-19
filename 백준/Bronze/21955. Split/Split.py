@@ -1,1 +1,2 @@
-print((d:=input())[:(t:=len(d)//2)],d[t:])
+t=len(a:=input())//2
+print(a[:t],a[t:])
