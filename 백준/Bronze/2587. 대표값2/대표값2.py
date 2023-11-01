@@ -1,3 +1,3 @@
-arr=[*map(int,open(0))]
-print(int(sum(arr)/5))
-print(sorted(arr)[2])
+a=[*map(int,open(0))]
+print(int(sum(a)/5))
+print(sorted(a)[2])
