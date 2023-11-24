@@ -1,3 +1,5 @@
+import sys
+input = lambda:sys.stdin.readline().rstrip()
 n, m = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(n)]
 dp = [[0] * (m+1) for i in range(n+1)]
