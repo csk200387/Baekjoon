@@ -1,17 +1,11 @@
 import sys
-from collections import deque
 input = lambda:sys.stdin.readline().rstrip()
 for _ in range(int(input())):
-    input()
+    n = int(input())
     arr = sorted(map(int, input().split()))
-    d = deque()
-    for i in range(len(arr)):
-        if i % 2 == 0:
-           d.appendleft(arr.pop())
-        else:
-            d.append(arr.pop())
-    mn = abs(d[0]-d[1])
-    for i in range(2, len(d)):
-        if mn < abs(d[i-1]-d[i]):
-            mn = abs(d[i-1]-d[i])
-    print(mn)
+    t = [arr[i]for i in range(n)if i%2==0]+[arr[i]for i in range(n)if i%2==1][::-1]
+    nm = 0
+    for i in range(1,n):
+        p = abs(t[i-1]-t[i])
+        if nm < p:nm=p
+    print(nm)
