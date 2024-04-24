@@ -1,11 +1,7 @@
-import sys, math
-input = lambda:sys.stdin.readline().rstrip()
-c = 1
-while True:
-    n = int(input())
-    if n == 0:
-        break
-    else:
-        arr = [tuple(map(int, input().split())) for i in range(n)]
-        print(f"Menu {c}:",min(arr, key=lambda x:x[1]/(math.pi*(x[0]/2)**2))[0])
-    c += 1
+c=1
+while 1:
+ n=int(input())
+ if n==0:break
+ else:
+  print(f"Menu {c}:",min([tuple(map(int,input().split()))for i in range(n)],key=lambda x:x[1]/(3.14*(x[0]/2)**2))[0])
+  c+=1
